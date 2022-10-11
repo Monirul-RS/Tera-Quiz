@@ -3,10 +3,11 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layouts/Main';
 import Home from './components/Home/Home';
-import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import TopicDetails from './components/TopicDetails/TopicDetails';
+import ErrorPage from './components/ErrorPage/ErrorPage';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -19,13 +20,10 @@ function App() {
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
-        {
-          path: '/topics',
-          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
-          element: <Topics></Topics>
-        },
+       
         {
           path: '/statistics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statistics></Statistics>,
         },
         {
@@ -44,12 +42,13 @@ function App() {
     },
     {
       path: '*',
-      element: <div>This route not found</div>
+      element: <ErrorPage></ErrorPage>
     }
 
   ])
   return (
     <div className="App">
+      
 
       <RouterProvider router={router}></RouterProvider>
     </div>

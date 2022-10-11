@@ -1,9 +1,7 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip,  ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-
-
-const Statistics = () => {
+const Chart = () => {
     const data = [
         {
             name: 'React',
@@ -23,20 +21,20 @@ const Statistics = () => {
         },
 
     ];
-    
     return (
+        <div>
             <ResponsiveContainer>
             <LineChart width={500} height={400} data={data}>
                 <Line type="monotone" dataKey="quiz" stroke="#82ca9d" />
                 <XAxis dataKey="name" />
                 <YAxis />
-                <Tooltip></Tooltip>
 
             </LineChart>
 
         </ResponsiveContainer>
-        
+            
+        </div>
     );
 };
 
-export default Statistics;
+export default Chart;
