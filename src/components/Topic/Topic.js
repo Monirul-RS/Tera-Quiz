@@ -8,7 +8,7 @@ const Topic = ({ topic }) => {
 
             <div className='border-2 rounded-xl m-4'>
                 <div>
-                    <img className='bg-blue-200 img-fluid rounded-xl' src={logo} alt="" />
+                    <img className='bg-indigo-200 w-full rounded-xl' src={logo} alt="" />
                 </div>
                 <div className='flex justify-between m-4'>
                     <div>

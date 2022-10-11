@@ -5,10 +5,10 @@ const NavBar = () => {
     return (
         <div>
             <div className="navbar bg-blue-100 h-">
-                <div className="flex-1">
+                <div className="flex-1 pl-12">
                     <a className="btn btn-ghost normal-case text-2xl font-bold">Tera Quiz</a>
                 </div>
-                <div className="flex-none">
+                <div className="flex-none pr-12">
                     <ul className="menu menu-horizontal p-0">
                         <li><Link to='/'>Topics</Link></li>
                         
