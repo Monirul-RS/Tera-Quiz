@@ -1,23 +1,23 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Chart from '../Chart/Chart';
-
-
+import { Line, LineChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 const Statistics = () => {
-    const charts = useLoaderData().data;
-    console.log(charts);
-    
+    const quiz = useLoaderData();
+    console.log(quiz.data);
     return (
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 p-9'>
-        {
-            charts.map(chart => <Chart
-                key={chart.id}
-                chart={chart}
-            ></Chart>)
-        }
-    </div>
+        <div>
         
+            <ResponsiveContainer>
+                <LineChart width={500} height={500} data={quiz.data}>
+                    <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+
+                </LineChart>
+            </ResponsiveContainer>
+
+        </div>
     );
 };
 
