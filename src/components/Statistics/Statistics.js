@@ -1,40 +1,22 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip,  ResponsiveContainer } from 'recharts';
+import { useLoaderData } from 'react-router-dom';
+import Chart from '../Chart/Chart';
 
 
 
 const Statistics = () => {
-    const data = [
-        {
-            name: 'React',
-            quiz: 8,
-        },
-        {
-            name: 'JavaScript',
-            quiz: 9,
-        },
-        {
-            name: 'CSS',
-            quiz: 8,
-        },
-        {
-            name: 'Git',
-            quiz: 11,
-        },
-
-    ];
+    const charts = useLoaderData().data;
+    console.log(charts);
     
     return (
-            <ResponsiveContainer>
-            <LineChart width={500} height={400} data={data}>
-                <Line type="monotone" dataKey="quiz" stroke="#82ca9d" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip></Tooltip>
-
-            </LineChart>
-
-        </ResponsiveContainer>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 p-9'>
+        {
+            charts.map(chart => <Chart
+                key={chart.id}
+                chart={chart}
+            ></Chart>)
+        }
+    </div>
         
     );
 };

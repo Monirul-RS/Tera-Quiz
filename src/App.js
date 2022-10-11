@@ -5,8 +5,8 @@ import Main from './layouts/Main';
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
-import TopicDetails from './components/TopicDetails/TopicDetails';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import QuizDetails from './components/QuizDetails/QuizDetails';
 
 
 function App() {
@@ -31,12 +31,12 @@ function App() {
           element: <Blog></Blog>
         },
         {
-          path: '/topic/:topicId',
+          path: '/quiz/:quizId',
           loader: async ({ params }) => {
             // console.log(params.topicId);
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
-          element: <TopicDetails></TopicDetails>
+          element: <QuizDetails></QuizDetails>
         }
       ]
     },

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
-    const { id, logo, name, total } = topic
+    const { id, logo, name, total } = topic;
     return (
         <div>
 
@@ -15,7 +15,7 @@ const Topic = ({ topic }) => {
                     <h2 className='text-xl font-semibold'>{name}</h2>
                     <h2>Total-Quiz: {total}</h2>
                     </div>
-                    <Link to={`/topic/${id}`}><button className='btn py-0 btn-primary'>Start</button></Link>
+                    <Link to={`/quiz/${id}`}><button className='btn py-0 btn-primary'>Start</button></Link>
                 </div>
             </div>
 
