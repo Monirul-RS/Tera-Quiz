@@ -5,13 +5,13 @@ const Topics = ({ topic }) => {
 
     return (
         <div>
-            <div className='border-2 rounded-xl ml-4'>
+            <div className='border-2 rounded-xl m-4'>
                 <div>
-                <img className='bg-blue-200 sm:img-fluid rounded-xl' src={logo} alt="" />
+                <img className='bg-blue-200 img-fluid rounded-xl' src={logo} alt="" />
                 </div>
-                <div className='flex justify-between m-6'>
+                <div className='flex justify-between m-4'>
                     <h2 className='text-xl'>{name}</h2>
-                    <button className='btn btn-primary'>Start</button>
+                    <button className='btn py-0 btn-primary'>Start</button>
                 </div>
             </div>
         </div>
