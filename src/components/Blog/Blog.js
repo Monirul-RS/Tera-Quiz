@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
-            <h1 className='mt-4 text-4xl text-bold underline'>QNA PART</h1>
+            <h1 className='mt-4 text-4xl font-bold text-sky-700  underline'>MORE OF REACT</h1>
             <div className='m-8'>
                 <p className='text-3xl text-left text-sky-700 font-bold'>1.What is the purpose of react-router??</p>
                 <p className='text-2xl text-left'><span className='font-bold underline'>ANS:-</span> Routing is a process in which a user is directed to different pages based on their action or request. ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
