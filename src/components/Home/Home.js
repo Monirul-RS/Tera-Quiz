@@ -6,13 +6,18 @@ const Home = () => {
     const topics = useLoaderData().data;
     console.log(topics);
     return (
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 p-9'>
-            {
-                topics.map(topic => <Topics
-                key={topic.id}
-                topic={topic}
-                ></Topics>)
-            }
+        <div>
+            <div>
+                <h1>sdfughudfhghudfhughudfhguhdfuighuidfhughdfuhgudfhughdfug</h1>
+            </div>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 p-9'>
+                {
+                    topics.map(topic => <Topics
+                        key={topic.id}
+                        topic={topic}
+                    ></Topics>)
+                }
+            </div>
         </div>
     );
 };
