@@ -1,19 +1,22 @@
 import React from 'react';
+// import { useLoaderData } from 'react-router-dom';
+// import Topic from '../Topic/Topic';
 
-const Topics = ({ topic }) => {
-    const { logo, name } = topic
+const Topics = () => {
+    // const topics = useLoaderData();
+    // console.log(topics);
 
     return (
         <div>
-            <div className='border-2 rounded-xl m-4'>
-                <div>
-                <img className='bg-blue-200 img-fluid rounded-xl' src={logo} alt="" />
-                </div>
-                <div className='flex justify-between m-4'>
-                    <h2 className='text-xl'>{name}</h2>
-                    <button className='btn py-0 btn-primary'>Start</button>
-                </div>
-            </div>
+            
+            {/* <div className='grid lg:grid-cols-4 md:grid-cols-2 p-9'>
+                {
+                    // topics.map(topic => <Topic
+                    //     key={topic.id}
+                    //     topic={topic}
+                    // ></Topic>)
+                }
+            </div> */}
         </div>
     );
 };
