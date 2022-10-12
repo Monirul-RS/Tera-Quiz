@@ -6,9 +6,9 @@ const Topic = ({ topic }) => {
     return (
         <div>
 
-            <div className='border-2 rounded-xl m-4'>
+            <div className='border-2 rounded-xl m-4 shadow-lg shadow-indigo-300'>
                 <div>
-                    <img className='bg-indigo-200 w-full rounded-xl' src={logo} alt="" />
+                    <img className='bg-indigo-400 w-full rounded-xl' src={logo} alt="" />
                 </div>
                 <div className='flex justify-between m-4'>
                     <div>

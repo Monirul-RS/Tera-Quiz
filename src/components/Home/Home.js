@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Topic from '../Topic/Topic';
-import img from '../images/Banner5.jpg'
+import img from '../images/Banner3.jpg'
 const Home = () => {
     const topics = useLoaderData().data;
     // console.log(topics);
