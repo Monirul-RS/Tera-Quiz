@@ -15,7 +15,7 @@ const Quiz = ({ question }) => {
                 {
                     position: "top-center",
                     autoClose: 2000,
-                    closeOnClick: true,
+                    // closeOnClick: true,
 
                 });
         }
@@ -28,7 +28,9 @@ const Quiz = ({ question }) => {
         }
     }
     const correctAnswers = () => {
-        toast.success(correctAnswer);
+        toast.success(correctAnswer,{
+            autoClose: 2000,
+        });
     }
     return (
         <div>

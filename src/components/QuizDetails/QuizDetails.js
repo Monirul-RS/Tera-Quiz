@@ -20,7 +20,7 @@ const QuizDetails = () => {
             {
                 quiz.data.questions.map((question) => (
                     <div>
-                        <div className='border rounded-2xl  lg:w-3/5 mx-auto mt-8 bg-slate-50 shadow-lg shadow-indigo-500/50'>
+                        <div className='border rounded-2xl  lg:w-3/5 mx-auto mt-8 bg-slate-50 shadow-lg shadow-indigo-600'>
                                 
 
                             <div className='text-center text-2xl text-sky-600 font-bold mb-6 questions mt-6'>
