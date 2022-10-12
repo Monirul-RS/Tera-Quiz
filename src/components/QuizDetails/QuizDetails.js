@@ -2,15 +2,18 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 
+
 const QuizDetails = () => {
     const quiz = useLoaderData();
     const { logo, name, questions } = quiz.data;
-    console.log(quiz.data);
+    // console.log(quiz.data);
+   
     return (
         <div>
             <div className='flex flex-col justify-center items-center'>
-                <h1 className='text-4xl font-bold mt-4 text-blue-600'>Quiz Topic: {name}</h1>
-                <img className='w-8 mb-4' src={logo} alt="" />
+                <h1 className='text-4xl font-bold mt-4 mb-6 text-blue-600'>Quiz Topic: {name}</h1>
+                <img className='w-12 bg-indigo-400 mb-4' src={logo} alt="" />
+                
             </div>
             <h3 className='text-2xl font-semibold'>Total Quiz: {questions.length}</h3>
 
@@ -18,14 +21,17 @@ const QuizDetails = () => {
                 quiz.data.questions.map((question) => (
                     <div>
                         <div className='border rounded-2xl  lg:w-3/5 mx-auto mt-8 bg-slate-50 shadow-lg shadow-indigo-500/50'>
+                                
+
                             <div className='text-center text-2xl text-sky-600 font-bold mb-6 questions mt-6'>
                                 {question.question ? question.question.slice(3, -4)
                                     : "question.question"}
                             </div>
+
                             <div className='rounded-lg p-8  lg:w-3/5 custom-border mx-auto bg-slate-50 mb-12'>
-                                <div>
+                                
                                     <Quiz question={question}></Quiz>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>

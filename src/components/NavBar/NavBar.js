@@ -13,7 +13,7 @@ const NavBar = () => {
     return (
 
         <div>
-            <div className=" w-full h-16 px-14 bg-sky-100 text-blue-600 flex flex-row justify-between items-center">
+            <div className=" w-full h-16 lg:px-14 bg-sky-100 text-blue-600 flex flex-row justify-between items-center">
                 <div className="brand-logo text-3xl font-bold px-2">Tera Quiz</div>
                 <ul className="hidden menu-list lg:flex lg:flex-row text-xs font-bold">
                     <li className="menu-list-item px-2 text-xl"><Link to='/'>Topics</Link></li>
