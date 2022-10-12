@@ -30,7 +30,7 @@ const Quiz = ({ question }) => {
     return (
         <div className='custom-quiz'>
             {options.map((option) => (
-                <div className='flex border border-sky-400 p-4 rounded-lg bg-slate-100'>
+                <div className='flex border border-sky-400 p-4 rounded-lg mt-4 bg-slate-100'>
 
                     <div>
                         <input onClick={() => checkOption(option)} type="radio" value={option} name='quiz' className='mr-2 mt-4' /> {option};
