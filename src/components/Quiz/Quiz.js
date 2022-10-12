@@ -7,6 +7,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 const Quiz = ({ question }) => {
     const { options, correctAnswer } = question;
+    // console.log(question);
 
 
     const checkOption = test => {
