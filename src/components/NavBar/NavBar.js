@@ -35,7 +35,7 @@ const NavBar = () => {
 
 function SideMenu() {
     return (
-        <div className="fixed h-screen w-1/2 sm:w-1/4 lg:hidden bg-sky-100 top-8">
+        <div className="fixed w-1/2 sm:w-1/4 lg:hidden bg-sky-100 top-16 right-0">
             <ul className="menu-list flex flex-col text-xs font-bold">
                 <li className="menu-list-item py-2 text-xl hover:bg-white hover:text-blue-600"><Link to='/'>Topics</Link></li>
                 <li className="menu-list-item py-2 text-xl hover:bg-white hover:text-blue-600"><Link to='/statistics'>Statistics</Link></li>
