@@ -14,7 +14,7 @@ const NavBar = () => {
 
         <div>
             <div className=" w-full h-16 lg:px-14 bg-sky-100 text-blue-600 flex flex-row justify-between items-center">
-                <div className="brand-logo text-3xl font-bold px-2">Tera Quiz</div>
+                <div className="brand-logo text-4xl font-bold px-2">Tera Quiz</div>
                 <ul className="hidden menu-list lg:flex lg:flex-row text-xs font-bold">
                     <li className="menu-list-item px-2 text-xl"><Link to='/'>Topics</Link></li>
                     <li className="menu-list-item px-2 text-xl"><Link to='/statistics'>Statistics</Link></li>
@@ -22,7 +22,7 @@ const NavBar = () => {
                 </ul>
 
                     <button onClick={() => { showSideMenu() }} className="lg:hidden menu-button">
-                        {(isSideMenuOpen) ? <XMarkIcon onClick={() => setisSideMenuOpen(!true)} className="w-8 h-8 px-2" ></XMarkIcon> : <Bars3Icon onClick={() => setisSideMenuOpen(!true)} className="w-8 h-8 px-2"></Bars3Icon>}
+                        {(isSideMenuOpen) ? <XMarkIcon onClick={() => setisSideMenuOpen(!true)} className="w-12 h-12 px-2" ></XMarkIcon> : <Bars3Icon onClick={() => setisSideMenuOpen(!true)} className="w-12 h-12 px-2"></Bars3Icon>}
                     </button>
                 
                 {(isSideMenuOpen) ? SideMenu() : ''}
